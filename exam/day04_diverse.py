@@ -1,7 +1,6 @@
 import time
 import tool
-
-tool.memory_usage()
+tool.memory_usage() #3 บรรทัดนี้ ใช้เพื่อตรวจสอบเวลา และการใช้หน่วยความจำ
 
 arr_qty = list(map(int,input().split(' '))) #0 0 -> arr_qty[0], arr_qty[1]
 qty_x = arr_qty[1]
@@ -34,8 +33,8 @@ while (cur_x <= max_x) :
     cur_y = 0 #Reset Y
 print('Cnt',icnt)
 
-end_time = time.time()
-elapsed_time = end_time - start_time
-print(round(elapsed_time,5), ' Sec')
+end_time = time.time() #เวลาสิ้นสุด
+elapsed_time = end_time - start_time #คำนวณเวลาที่ใช้
+print(round(elapsed_time,5), ' Sec') 
 
-tool.memory_usage()
+tool.memory_usage() #แสดงหน่วยความจำที่เพิ่มขึ้น
